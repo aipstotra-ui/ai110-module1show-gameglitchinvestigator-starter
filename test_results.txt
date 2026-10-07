@@ -1,0 +1,25 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.13.15, pytest-9.1.1, pluggy-1.6.0 -- ai110-module1show-gameglitchinvestigator-starter/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: ai110-module1show-gameglitchinvestigator-starter
+plugins: anyio-4.15.1
+collecting ... collected 16 items
+
+tests/test_game_logic.py::test_winning_guess PASSED                      [  6%]
+tests/test_game_logic.py::test_guess_too_high PASSED                     [ 12%]
+tests/test_game_logic.py::test_guess_too_low PASSED                      [ 18%]
+tests/test_game_logic.py::test_too_high_message_says_go_lower PASSED     [ 25%]
+tests/test_game_logic.py::test_too_low_message_says_go_higher PASSED     [ 31%]
+tests/test_game_logic.py::test_single_digit_guess_compares_as_number PASSED [ 37%]
+tests/test_game_logic.py::test_hard_range_is_bigger_than_normal PASSED   [ 43%]
+tests/test_game_logic.py::test_parse_guess_rejects_text_and_decimals PASSED [ 50%]
+tests/test_game_logic.py::test_parse_guess_rejects_out_of_range PASSED   [ 56%]
+tests/test_game_logic.py::test_parse_guess_accepts_padded_number PASSED  [ 62%]
+tests/test_game_logic.py::test_wrong_guess_never_adds_points PASSED      [ 68%]
+tests/test_game_logic.py::test_first_guess_win_scores_100 PASSED         [ 75%]
+tests/test_game_logic.py::test_app_second_guess_compares_numbers PASSED  [ 81%]
+tests/test_game_logic.py::test_app_normal_allows_eight_guesses_and_counter_is_current PASSED [ 87%]
+tests/test_game_logic.py::test_app_invalid_input_does_not_use_an_attempt PASSED [ 93%]
+tests/test_game_logic.py::test_app_new_game_after_win_starts_fresh PASSED [100%]
+
+============================== 16 passed in 0.69s ==============================
